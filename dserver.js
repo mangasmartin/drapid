@@ -4,7 +4,7 @@ const wss = new WebSocket.Server({ port: process.env.PORT || 4000 });
 let rooms = [];
 
 wss.on("connection", function (ws,req) {
-  if (req.headers.origin === "https://dinami.cat"){
+  //if (req.headers.origin === "https://dinami.cat"){
     //set random num id room
     let room, pass, key, connec = false;
     if (req.url == "/create"){
@@ -65,9 +65,9 @@ wss.on("connection", function (ws,req) {
       }
     });
 
-  } else {
-    ws.close();
-  }
+  //} else {
+    //ws.close();
+  //}
 });
 
 function randomNum(min, max, last){
