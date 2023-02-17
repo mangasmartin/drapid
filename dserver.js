@@ -1,6 +1,6 @@
 const WebSocket = require('ws');
 //const md5 = require('crypto-js/md5');
-const wss = new WebSocket.Server({ port: process.env.PORT || 4000 });
+const wss = new WebSocket.Server({ port: process.env.PORT || 80 });
 let rooms = [];
 
 wss.on("connection", function (ws,req) {
