@@ -1,0 +1,15 @@
+{
+  "name": "apps",
+  "version": "1.0.0",
+  "description": "Websocket system for Dinami",
+  "main": "apps.js",
+  "scripts": {
+    "start": "node apps.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lemm",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^7.3.1"
+  }
+}
